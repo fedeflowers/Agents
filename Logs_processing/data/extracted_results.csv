@@ -1,0 +1,105 @@
+raw_text,error,requires_review,part_name,max_stress_mpa,material_type,part_id,confidence_score
+The maximum tensile stress experienced by PART-XYZ is calculated to be 150 MPa.,"Recursion limit of 5 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT",True,,,,,
+We observed no significant stress concentrations in the analyzed region of the component.,,True,component,,UNKNOWN,,0.5
+"Under the applied loads, the part exhibits compressive stresses reaching up to 120 MPa.",,False,part,120.0,UNKNOWN,,0.9
+Inspection of the stress distribution revealed peaks at 200 MPa near the weld joints.,,False,weld joints,200.0,UNKNOWN,,0.9
+"It looks like steel, therefore we assume the yield strength to be around 300 MPa.",,False,unknown,300.0,STEEL,,0.9
+The part is subjected to an average shear stress of 45 MPa across its length.,,False,unknown,45.0,UNKNOWN,,0.9
+Experimental data shows that the stress at the critical section is 60 MPa.,,False,critical section,60.0,UNKNOWN,,0.9
+"I did not find any signs of excessive stress in PART-XYZ, indicating a robust design.",,False,PART-XYZ,,UNKNOWN,PART-XYZ,0.8
+"For the given dimensions, the maximum bending stress is estimated to be 80 MPa.",,False,unknown,80.0,UNKNOWN,,0.9
+The calculated Von Mises stress for this scenario is approximately 110 MPa.,,False,Unknown,110.0,UNKNOWN,,0.9
+"Load tests confirm the part remains within safe limits, with stresses below 70 MPa.",,False,Load tested part,70.0,UNKNOWN,,0.9
+Analysis indicates a tensile stress of 150 in the faulted region.,,False,faulted region,150.0,UNKNOWN,,0.9
+"Upon review, the part's stress state appears stable with no critical failures at 90 MPa.",,False,unknown,90.0,UNKNOWN,,0.9
+This component can withstand transient loads yielding stresses of 95 MPa.,,False,component,95.0,UNKNOWN,,0.9
+"Any stress beyond the elastic limit, typically 250 MPa for this material, should be avoided.",,False,Unknown,250.0,UNKNOWN,,0.9
+An unclear material composition suggests that we cannot definitively state its exact strength.,,True,Unclear Material,,UNKNOWN,,0.5
+"For PART-XYZ, post-analysis shows a shear stress distribution with a peak of 35 MPa.",,False,PART-XYZ,35.0,UNKNOWN,PART-XYZ,0.9
+The critical analysis indicates localized stress nearing the yield threshold of the material.,,True,Not specified,,UNKNOWN,,0.5
+Dynamic loading scenarios predict stress fluctuations around 130 MPa within the part.,,False,part,130.0,UNKNOWN,,0.9
+"The overall stress level remains low, confirmed by finite element modeling at 55 MPa.",,False,unknown,55.0,UNKNOWN,,0.9
+The maximum tensile stress observed on part PART-XYZ reaches 120 MPa under operating conditions.,,False,Mechanical Component,250.0,UNKNOWN,PART-XYZ,0.9
+A compressive stress of 75 MPa was recorded in the lower section of the beam.,,False,beam,75.0,UNKNOWN,,0.9
+Analysis shows that this component experiences no significant stress during normal operations.,,True,component,,UNKNOWN,,0.5
+"The stress distribution in region A is approximately 0.3 GPa, indicating potential areas for improvement.",,False,region A,300.0,UNKNOWN,,0.9
+"For material evaluation, it looks like steel, but further testing is needed to confirm its properties.",,True,material evaluation,,STEEL,,0.7
+"The shear stress in the joint area is measured at 50 MPa, which is within the design limits.",,False,joint area,50.0,UNKNOWN,,0.9
+Peak stress levels were calculated to exceed 90 MPa at critical junctions of the assembly.,,False,assembly,90.0,UNKNOWN,,0.9
+"Observed stress values approached the yield limit, specifically around 460 MPa.",,False,Unknown,460.0,UNKNOWN,,0.9
+"Stress concentrations near the fillet have been identified, requiring design modifications.",,False,,,,,0.0
+"Under maximum load, the stress on PART-XYZ is expected to reach 85 MPa before yielding.",,False,PART-XYZ,85.0,UNKNOWN,PART-XYZ,0.9
+Is there a reason the units are missing for the calculated stress?,,False,,,,,0.0
+"During load testing, a maximum of 150 MPa was registered, indicating potential failure points.",,False,load testing,150.0,UNKNOWN,,0.9
+"Overall, the stress profile suggests uniform load distribution, with no areas exceeding 100 MPa.",,False,Stress Profile,100.0,UNKNOWN,,0.9
+Analysis of the fatigue life indicates stresses around 220 MPa will lead to failure after 1 million cycles.,,False,fatigue life analysis,220.0,UNKNOWN,,0.9
+Preliminary stress checks show values between 0 to 60 MPa across various sections of the component.,,False,component,60.0,UNKNOWN,,0.9
+"We have verified the stress analysis, and it appears to remain below the material's tensile strength of 700 MPa.",,False,stress analysis,700.0,UNKNOWN,,0.9
+The critical stress value for this part is calculated to be 2.5 times its safety margin.,,False,,,,,0.0
+"Localized high stress regions were noted, particularly at the weld joint, exceeding 120 MPa.",,False,weld joint,120.0,UNKNOWN,,0.9
+Finite Element Analysis indicates that the maximum principal stress is approximately 1.2e5 Pa.,,False,Finite Element Analysis,0.12,UNKNOWN,,0.9
+Please assess whether the ambiguous material classification could affect our stress evaluation for PART-XYZ.,,True,PART-XYZ,,UNKNOWN,PART-XYZ,0.5
+The maximum tensile stress observed on PART-XYZ was measured at 150 MPa.,,False,PART-XYZ,150.0,UNKNOWN,PART-XYZ,0.9
+"In the analyzed region of the flange, stress levels reached up to 200 MPa under load conditions.",,False,flange,200.0,UNKNOWN,,0.9
+Stress analysis reveals that the component experiences no significant stress during operation.,,False,component,0.0,UNKNOWN,,0.9
+"The shear stress experienced by the part is calculated to be 75 MPa, indicating adequate safety margins.",,False,part,75.0,UNKNOWN,,0.9
+"Based on the simulation, the stress distribution shows a peak at 180 MPa in the critical section.",,False,critical section,180.0,UNKNOWN,,0.9
+"Preliminary analysis suggests that the material of the part looks like steel, but further testing is needed.",,True,part,,STEEL,,0.7
+"Under maximum load, the stress across the surface of PART-XYZ approaches approximately 300 MPa.",,False,PART-XYZ,300.0,UNKNOWN,PART-XYZ,0.9
+"The analysis indicates that tensile stresses are acceptable, measuring around 45 MPa overall.",,False,tensile stresses,45.0,UNKNOWN,,0.9
+We did not observe any stress greater than 50 MPa in the structural integrity assessment.,,False,structural integrity assessment,50.0,UNKNOWN,,0.9
+A compression stress of 100 MPa was identified at the base of the supporting structure.,,False,supporting structure,100.0,UNKNOWN,,0.9
+"The results indicate stress levels below the yield point, with a maximum value of 120 MPa.",,False,Unknown,120.0,UNKNOWN,,0.9
+"In the loading scenario, the part experiences an equivalent von Mises stress of 60 MPa.",,False,unknown,60.0,UNKNOWN,,0.9
+"Calculated principal stresses for PART-XYZ are 90 MPa and -30 MPa, respectively.",,False,PART-XYZ,90.0,UNKNOWN,PART-XYZ,0.9
+The fatigue analysis shows that the part could withstand cyclic loading without exceeding 80 MPa.,,False,fatigue analysis part,80.0,UNKNOWN,,0.9
+"Reports suggest a maximum stress of “about 200” in the analyzed region, missing appropriate units.",,False,analyzed region,200.0,UNKNOWN,,0.9
+"During testing, we observed that the stresses on the component did not exceed 25 MPa.",,False,component,25.0,UNKNOWN,,0.9
+The evaluation concluded that the part's stress under normal conditions remains within safe limits.,,True,part,,UNKNOWN,,0.5
+A stress concentration factor of 3.0 was applied to determine localized stress levels in PART-XYZ.,,False,PART-XYZ,,UNKNOWN,PART-XYZ,0.8
+"At the joint, stress measurements indicated 110 MPa, necessitating further reinforcement.",,False,joint,110.0,UNKNOWN,,0.9
+"After a thorough assessment, the stress levels were confirmed to be significantly below design limits.",,False,,,,,0.0
+"The estimated stress ratios indicate a healthy margin, trending at less than 5% of the material’s yield strength.",,True,unknown,,UNKNOWN,,0.5
+The maximum tensile stress observed in PART-XYZ reached 150 MPa.,,False,PART-XYZ,150.0,UNKNOWN,PART-XYZ,1.0
+"In the analysis, the compressive stress on the part was measured at approximately 250 MPa.",,False,part,250.0,UNKNOWN,,0.9
+Stress distribution within the component revealed no significant stress in the critical regions.,,True,component,,UNKNOWN,,0.5
+"Upon inspection, the yield stress of the material appears to be around 300 MPa.",,False,material,300.0,UNKNOWN,,0.9
+PART-ABC exhibited a peak shear stress of 90 MPa at the joint interface.,,False,PART-ABC,90.0,UNKNOWN,PART-ABC,0.9
+The results indicate an ambiguous material composition; it looks like steel but is not confirmed.,,True,Unknown,,UNKNOWN,,0.5
+"In the simulation, the average stress experienced by the part was found to be 76.5 MPa.",,False,part,76.5,UNKNOWN,,0.9
+"For this application, a safety factor of 2.5 is acceptable given the structural load of 120 MPa.",,False,safety factor analysis,120.0,UNKNOWN,,0.9
+"The tensile stress calculated on the outer surface is 55 MPa, which is within safe limits.",,False,outer surface,55.0,UNKNOWN,,0.9
+Analysis showed that the ultimate tensile strength of the component is greater than 400 MPa.,,False,component,400.0,UNKNOWN,,0.9
+No significant stress concentration was detected around the bolt holes in PART-XYZ.,,False,bolt holes,,UNKNOWN,PART-XYZ,0.8
+"In response to loading conditions, the part experienced a maximum stress of 350 MPa.",,False,part,350.0,UNKNOWN,,0.9
+"The stress fields indicated a high risk of failure, particularly where the stress reached 180 MPa.",,False,stress fields,180.0,UNKNOWN,,0.9
+"For a composite material similar to aluminum, the stress was measured at 120 MPa.",,False,composite material,120.0,COMPOSITE,,0.9
+"In this analysis, the critical region of PART-XYZ did not exceed the elastic limit.","Recursion limit of 5 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT",True,,,,,
+The equivalent von Mises stress for the component was calculated to be 65 MPa under operating conditions.,,False,component,65.0,UNKNOWN,,0.9
+"Using a different load configuration, we noted a stress threshold that marginally exceeded expectations: 45 MPa.",,False,Load Configuration,45.0,UNKNOWN,,0.9
+"With no load applied, the residual stress in the part is negligible, practically zero.",,False,part,0.0,UNKNOWN,,0.9
+The stress analysis is inconclusive; further testing is required to determine material properties.,,True,Unknown,,UNKNOWN,,0.5
+"Overall, the computed stress values align with the design specifications, staying well below 200 MPa.",,False,Overall stress analysis,200.0,UNKNOWN,,0.9
+The stress profile along the length of PART-XYZ suggests areas of possible structural weakness.,,True,PART-XYZ,,UNKNOWN,PART-XYZ,0.7
+The stress analysis of PART-ABC reveals a maximum tensile stress of 150 MPa.,,False,PART-ABC,150.0,UNKNOWN,PART-ABC,0.9
+"Upon inspection, the part exhibits no significant stress under operational loads.",,False,part,0.0,UNKNOWN,,0.9
+"For PART-XYZ, the shear stress was calculated to be approximately 80 MPa.",,False,PART-XYZ,80.0,UNKNOWN,PART-XYZ,0.9
+Evaluation of the component indicates it experiences compressive stresses nearing 200 MPa.,,False,component,200.0,UNKNOWN,,0.9
+It appears that the stress concentration on the edge of the flange is 120 MPa.,,False,flange,120.0,UNKNOWN,,0.9
+The simulation results suggest stress levels around 60-70 MPa in the critical areas.,,False,critical areas,70.0,UNKNOWN,,0.9
+Analysis determined the maximum von Mises stress for this part to be 300 MPa.,,False,unknown,300.0,UNKNOWN,,0.9
+PART-123 has been found to perform adequately under a stress threshold above 50 MPa.,,False,PART-123,50.0,UNKNOWN,PART-123,0.9
+Observed stress on the joint is estimated to be 35.8.,,False,joint,35.8,UNKNOWN,,0.9
+"It looks like steel, and stress analysis shows values up to 150 MPa.",,False,steel,150.0,STEEL,,0.9
+"For this configuration, the bending stress was noted as 0.5 times the yield strength.",,True,Unknown,,UNKNOWN,,0.2
+"Under dynamic loading conditions, PART-456 experiences stress fluctuations between 45 MPa and 55 MPa.",,False,PART-456,55.0,UNKNOWN,PART-456,0.9
+The analysis indicates no stress reversal in the cycle for PART-789.,,False,Gear Assembly,250.0,UNKNOWN,PART-789,0.9
+Implementation of fatigue testing showed average stress levels around 75 MPa.,,False,fatigue testing,75.0,UNKNOWN,,0.9
+"In this case, stress calculations suggest an upper limit of 90 MPa for safe operation.",,False,Unknown,90.0,UNKNOWN,,0.9
+"The total stress on the weld region approaches critical, measuring at 250 MPa.",,False,weld region,250.0,UNKNOWN,,0.9
+Numerical simulations indicate an equivalent stress distribution prevalent in the 10 to 50 MPa range.,,False,Numerical simulations,50.0,UNKNOWN,,0.8
+Calculating the principal stresses reveals that PART-DEF holds limits of 175 MPa.,,False,PART-DEF,175.0,UNKNOWN,PART-DEF,0.9
+"For the machined part, stresses along the surface were identified at 65 MPa.",,False,machined part,65.0,UNKNOWN,,0.9
+"Almost negligible stress, around 0.1 MPa, was detected in the non-load bearing sections of PART-GHI.",,False,Part GHI,150.0,UNKNOWN,PART-GHI,0.9

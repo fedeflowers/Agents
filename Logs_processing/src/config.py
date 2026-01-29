@@ -1,28 +1,43 @@
+"""Configuration management using pydantic-settings."""
 import os
+from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field
 
 
-# Calculate absolute path to .env file (assuming it's in project root, one level up from src)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ENV_FILE = os.path.join(BASE_DIR, '.env')
+# Calculate paths
+BASE_DIR = Path(__file__).parent.parent
+ENV_FILE = BASE_DIR / ".env"
+
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=ENV_FILE, env_file_encoding='utf-8', extra='ignore')
+    """Application settings loaded from environment variables."""
+    
+    model_config = SettingsConfigDict(
+        env_file=str(ENV_FILE),
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
 
     # LLM Settings
-    OPENAI_API_KEY: str = Field(..., description="API Key for OpenAI or compatible provider.")
-    MODEL_NAME: str = Field("gpt-4o-mini", description="Model to use for extraction (e.g., gpt-4o, claude-3-opus).")
+    OPENAI_API_KEY: str = Field(
+        ...,
+        description="API Key for OpenAI or compatible provider.",
+    )
+    MODEL_NAME: str = Field(
+        "gpt-4o-mini",
+        description="Model to use for extraction (e.g., gpt-4o, claude-3-opus).",
+    )
     
     # App Settings
-    LOG_LEVEL: str = "INFO"
+    LOG_LEVEL: str = Field("INFO", description="Logging level (DEBUG, INFO, WARNING, ERROR).")
+    
+    # Paths
+    DATA_DIR: Path = Field(default=BASE_DIR / "data", description="Data directory path.")
+    
 
 settings = Settings()
 
-# Ensure litellm/openai libraries can see the key in env vars
+# Export API key to environment for litellm/openai
 if settings.OPENAI_API_KEY:
     os.environ["OPENAI_API_KEY"] = settings.OPENAI_API_KEY
-
-# Configure LiteLLM (Optional global configs)
-import litellm
-# litellm.drop_params = True # Example: auto-drop unsupported params

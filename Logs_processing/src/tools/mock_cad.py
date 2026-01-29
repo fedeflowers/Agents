@@ -15,6 +15,6 @@ def get_material_properties(part_id: str) -> Dict[str, Any]:
     Useful for enriching extraction data when a Part ID is mentioned.
     """
     if part_id in _DATABASE:
-            return _DATABASE[part_id]
+        return _DATABASE[part_id]
     
-    return {}
+    return {"error": f"Part '{part_id}' not found in database", "found": False}
